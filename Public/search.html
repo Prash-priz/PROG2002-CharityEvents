@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Events - Hope Community Foundation</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Hope Community Foundation</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="search.html">Search Events</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h2>Search Charity Events</h2>
+
+        <form id="search-form">
+
+            <div>
+                <label for="date">Date:</label>
+                <input type="date" id="date">
+            </div>
+
+            <div>
+                <label for="location">Location:</label>
+                <input type="text" id="location"
+                       placeholder="Enter a location">
+            </div>
+
+            <div>
+                <label for="category">Category:</label>
+                <select id="category">
+                    <option value="">All Categories</option>
+                </select>
+            </div>
+
+            <button type="submit">Search</button>
+            <button type="button" id="clear-button">Clear Filters</button>
+
+        </form>
+
+        <section>
+            <h2>Search Results</h2>
+
+            <div id="search-results">
+                <p>Use the filters above to search for events.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/search.js"></script>
+
+</body>
+</html>
