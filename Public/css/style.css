@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header and navigation */
+
+/* Header and navigation */
+
+header {
+    background-color: #1f6f50;
+    color: white;
+    padding: 0 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 85px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.18);
+    text-decoration: none;
+}
+/* Main page */
+
+main {
+    width: 85%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+h2 {
+    color: #1f6f50;
+}
+
+/* Event cards */
+
+#events-container,
+#search-results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+#events-container > div,
+#search-results > div {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+#events-container h3,
+#search-results h3 {
+    color: #1f6f50;
+    margin-top: 0;
+}
+
+/* Links */
+
+#events-container a,
+#search-results a {
+    display: inline-block;
+    background-color: #1f6f50;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#events-container a:hover,
+#search-results a:hover {
+    background-color: #174f3b;
+}
+
+/* Search form */
+
+#search-form {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+#search-form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: 100%;
+    max-width: 450px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+/* Buttons */
+
+button {
+    background-color: #1f6f50;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+button:hover {
+    background-color: #174f3b;
+}
+
+/* Event details */
+
+#event-details,
+#registration-section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 25px;
+}
+
+#event-details h3 {
+    color: #1f6f50;
+}
+
+/* Mobile layout */
+
+@media (max-width: 600px) {
+    header {
+        padding: 15px 5%;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    nav a {
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+
+    button {
+        margin-bottom: 10px;
+    }
+}
