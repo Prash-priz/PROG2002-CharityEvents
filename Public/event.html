@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details - Hope Community Foundation</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Hope Community Foundation</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="search.html">Search Events</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Event Details</h2>
+
+            <div id="event-details">
+                <p>Loading event details...</p>
+            </div>
+        </section>
+
+        <section id="registration-section" style="display: none;">
+            <h2>Register for this Event</h2>
+
+            <p>
+                Select the number of tickets you would like to register.
+            </p>
+
+            <label for="tickets">Number of Tickets:</label>
+
+            <select id="tickets">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <button type="button" id="register-button">
+                Register
+            </button>
+        </section>
+
+    </main>
+
+    <script src="js/event.js"></script>
+
+</body>
+</html>
